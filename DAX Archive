@@ -7,3 +7,6 @@ AVERAGEX(
 		DAY),
 	[Total Sales]
 )
+
+SPLY Sales = 
+	CALCULATE([Total Sales] , SAMEPERIODLASTYEAR(Dates[Date]))
