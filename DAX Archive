@@ -10,3 +10,5 @@ AVERAGEX(
 
 SPLY Sales = 
 	CALCULATE([Total Sales] , SAMEPERIODLASTYEAR(Dates[Date]))
+
+2YB Sales = CALCULATE([SPLY Sales] , SAMEPERIODLASTYEAR(Dates[Date]))
