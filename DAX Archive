@@ -15,3 +15,4 @@ SPLY Sales =
 
 5YB-Sales = CALCULATE([Total Sales] , DATEADD(Dates[Date],-5 , YEAR))
 
+PM Sales = CALCULATE([Total Sales] , PREVIOUSMONTH(Dates[Date]))
