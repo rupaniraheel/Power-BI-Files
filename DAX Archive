@@ -12,3 +12,6 @@ SPLY Sales =
 	CALCULATE([Total Sales] , SAMEPERIODLASTYEAR(Dates[Date]))
 
 2YB Sales = CALCULATE([SPLY Sales] , SAMEPERIODLASTYEAR(Dates[Date]))
+
+5YB-Sales = CALCULATE([Total Sales] , DATEADD(Dates[Date],-5 , YEAR))
+
