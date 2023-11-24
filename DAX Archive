@@ -1,1 +1,9 @@
-
+7DMA Total Sales =
+AVERAGEX( 
+	DATESINPERIOD( 
+		Dates[Date] , 
+		LASTDATE( Dates[Date] ), // row by row date
+		-7,
+		DAY),
+	[Total Sales]
+)
